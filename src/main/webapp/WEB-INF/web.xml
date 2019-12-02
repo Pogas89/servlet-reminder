@@ -9,6 +9,26 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>helloServlet</servlet-name>
+        <url-pattern>/redirect</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>redirectForServlet</servlet-name>
+        <servlet-class>com.dzmitry.servlets.RedirectForServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>redirectForServlet</servlet-name>
         <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>nameServlet</servlet-name>
+        <servlet-class>com.dzmitry.servlets.NameServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>nameServlet</servlet-name>
+        <url-pattern>/names</url-pattern>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
 </web-app>
